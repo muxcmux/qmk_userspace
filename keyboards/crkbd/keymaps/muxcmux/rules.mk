@@ -1,0 +1,6 @@
+RGBLIGHT_ENABLE   = no
+RGBLIGHT_SLEEP    = yes
+RGB_MATRIX_ENABLE = yes
+OLED_ENABLE       = yes
+OLED_DRIVER       = ssd1306
+
