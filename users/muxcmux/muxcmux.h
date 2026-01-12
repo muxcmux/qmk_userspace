@@ -49,7 +49,7 @@ bool handle_macros(uint16_t keycode, keyrecord_t *record);
 // The split layout
 
               //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-#define L0R3      CW_TOGG,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                         KC_Y,    KC_U,    KC_I,    KC_O,   KC_P,  KC_BSPC
+#define L0R3       KC_TAB,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                         KC_Y,    KC_U,    KC_I,    KC_O,   KC_P,  KC_BSPC
               //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
 #define L0R2        MO(2),    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN,   MO(1)
               //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
@@ -59,29 +59,29 @@ bool handle_macros(uint16_t keycode, keyrecord_t *record);
                                                   //`--------------------------'  `--------------------------'
 
               //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-#define L1R3      M_LOGIN, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                      KC_CIRC, KC_AMPR, KC_ASTR, XXXXXXX, S_EMOJI, KC_BSPC
+#define L1R3      M_LOGIN, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                      KC_CIRC, KC_AMPR, KC_ASTR, XXXXXXX, S_EMOJI, _______
               //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-#define L1R2      XXXXXXX, S_SPOTL,   LCA_S,   LCA_D,   LCA_F,   LCA_G,                      KC_MRWD, KC_VOLD, KC_VOLU, KC_MFFD, S_SCRSH, XXXXXXX
+#define L1R2      CW_TOGG, S_SPOTL,   LCA_S,   LCA_D,   LCA_F,   LCA_G,                      KC_MRWD, KC_VOLD, KC_VOLU, KC_MFFD, S_SCRSH, XXXXXXX
               //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-#define L1R1      S_SWWIN, KC_LCTL, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_MPLY, XXXXXXX, XXXXXXX, XXXXXXX, KC_RCTL, XXXXXXX
+#define L1R1      S_SWWIN, KC_LCTL,   LCA_X,   LCA_C,   LCA_V,   LCA_B,                      KC_MPLY, XXXXXXX, XXXXXXX, XXXXXXX, KC_RCTL, XXXXXXX
               //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
 #define L1R0                                          _______, _______, _______,    _______, _______, _______
                                                   //`--------------------------'  `--------------------------'
 
               //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-#define L2R3      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_PLUS, KC_LBRC, KC_RBRC, KC_MINS, XXXXXXX, KC_BSPC
+#define L2R3      XXXXXXX,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                       KC_PLUS, KC_LBRC, KC_RBRC, KC_MINS, XXXXXXX, _______
               //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-#define L2R2      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                       KC_EQL, KC_LCBR, KC_RCBR, KC_UNDS, KC_PIPE, KC_BSLS
+#define L2R2      XXXXXXX,   KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,                       KC_EQL, KC_LCBR, KC_RCBR, KC_UNDS, KC_PIPE, KC_BSLS
               //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-#define L2R1      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                       KC_GRV, KC_QUOT, KC_DQUO, KC_AMPR, KC_TILD, _______
+#define L2R1      XXXXXXX,   KC_F11, KC_F12,  KC_F13,  KC_F14,  KC_F15,                       KC_GRV, KC_QUOT, KC_DQUO, KC_AMPR, KC_TILD, _______
               //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
 #define L2R0                                          _______, _______, _______,    _______, _______, _______
                                                   //`--------------------------'  `--------------------------'
 
               //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-#define L3R3      _______,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_BSPC
+#define L3R3      _______,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0, _______
               //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-#define L3R2      _______,    KC_6,    KC_7,    KC_8,    KC_9,  KC_TAB,                      KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX, XXXXXXX
+#define L3R2      _______,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,                      KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, MEH_ESC, XXXXXXX
               //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
 #define L3R1      _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, _______, _______, _______, _______
               //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
@@ -89,7 +89,7 @@ bool handle_macros(uint16_t keycode, keyrecord_t *record);
                                                   //`--------------------------'  `--------------------------'
 
               //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-#define L4R3      XXXXXXX, RGB_TOG, RGB_VAD, RGB_VAI, RGB_MOD, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BSPC
+#define L4R3      XXXXXXX, RGB_TOG, RGB_VAD, RGB_VAI, RGB_MOD, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______
               //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
 #define L4R2      XXXXXXX, XXXXXXX, XXXXXXX,   MEH_D,   MEH_F,   MEH_G,                      XXXXXXX, KC_BRID, KC_BRIU, XXXXXXX, XXXXXXX, XXXXXXX
               //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
